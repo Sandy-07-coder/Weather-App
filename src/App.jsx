@@ -73,7 +73,7 @@ const App = () => {
     }
     const APIKey = import.meta.env.VITE_WEATHER_API_KEY
     /* Getting the geolocation */
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=1&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=1&appid=${APIKey}`)
       .then((res) => res.json())
       .then((data) => {
 
